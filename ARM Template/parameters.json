@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "TrainingCluster"
+        },
+        "location": {
+            "value": "centralindia"
+        },
+        "dnsPrefix": {
+            "value": "TrainingCluster-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.20.7"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/a1aa6cdf-38ec-42c4-a08b-b042b5a83b15/resourceGroups/TrainingRG/providers/Microsoft.Network/virtualNetworks/TrainingRG-vnet/subnets/default"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-a1aa6cdf-38ec-42c4-a08b-b042b5a83b15-CIN"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/a1aa6cdf-38ec-42c4-a08b-b042b5a83b15/resourcegroups/defaultresourcegroup-cin/providers/microsoft.operationalinsights/workspaces/defaultworkspace-a1aa6cdf-38ec-42c4-a08b-b042b5a83b15-cin"
+        },
+        "workspaceRegion": {
+            "value": "centralindia"
+        }
+    }
+}
